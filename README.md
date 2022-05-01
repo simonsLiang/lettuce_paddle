@@ -104,7 +104,20 @@ print("MLUPS: ", simulation.step(1000))
 ```
 python run.py --resolution 256 --reynolds 1600
 ```
-将会每隔1000步生成网格数为255x256x256,雷诺数位1600的vtr文件，可在第三方软件比如paraview进行仿真，运行完成后绘制出该参数下-dk/dt的折线图
+将会每隔1000步生成网格数为255x256x256,雷诺数位1600的vtr文件，可在第三方软件比如paraview进行仿真，同时得到动能变化数值，保存于TGV3DoutRes256E.npy中，如下：
+<div>
+    <img src="./figs/output1.png" width=300">
+</div>     
+
+运行
+```
+python plotE.py --filename TGV3DoutRes256E.npy --savename ./dissipation.png
+```
+将会在根据TGV3DoutRes256E.npy绘制能量耗散曲线，保存于./dissipation.png中，如下：
+
+<div>
+    <img src="./figs/output2.png" width=300">
+</div>      
 
 ## 5. LICENSE
 
