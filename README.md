@@ -88,7 +88,7 @@ print("MLUPS: ", simulation.step(1000))
 ```
 python run.py --resolution 256 --reynolds 1600
 ```
-将会每隔1000步生成网格数为256*256*256,雷诺数位1600的vtr文件，可在第三方软件比如paraview进行仿真，运行完成后同时绘制出该参数下-dk/dt的折线图
+将会每隔1000步生成网格数为255x256x256,雷诺数位1600的vtr文件，可在第三方软件比如paraview进行仿真，运行完成后同时绘制出该参数下-dk/dt的折线图
 
 ## 5. LICENSE
 
