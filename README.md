@@ -49,12 +49,12 @@ lettuce是一个基于LBM的计算流体动力学框架,具有gpu加速计算、
 
 使用原代码计算−dk/dt得到的结果：
 <div>
-    <img src="./figs/t7.png" width=300">
+    <img src="./figs/t7.png" width=400">
 </div>   
 
 使用本项目代码计算−dk/dt得到的结果：
 <div>
-    <img src="./figs/t7.png" width=300">
+    <img src="./figs/t7.png" width=400">
 </div>                                          
                                         
 可以从[BaiduYun](https://pan.baidu.com/s/1p8N9yoqkVypHZDUUsgFhAA?pwd=cexk)处下载本项目生成的6个TGV3DoutRes256E.npy文件             
