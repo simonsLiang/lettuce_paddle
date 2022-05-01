@@ -38,9 +38,9 @@
 
 采用相同参数（着色有一点区别，便于区分）本项目代码生成的vtr文件在paraview显示结果：
 <div>
-    <img src="./figs/p5.png" width=300">
-    <img src="./figs/p7.png" width=300"> 
-    <img src="./figs/p10.png" width=300">
+    <img src="./figs/p5.png" width=280">
+    <img src="./figs/p7.png" width=280"> 
+    <img src="./figs/p10.png" width=280">
 </div>                                       
 
 可以从[BaiduYun](https://pan.baidu.com/s/1p8N9yoqkVypHZDUUsgFhAA?pwd=cexk)处下载本项目t=5000,t=7000,t=10000生成的vtr文件
