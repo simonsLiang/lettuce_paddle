@@ -31,8 +31,8 @@ lettuce是一个基于LBM的计算流体动力学框架,具有gpu加速计算、
 
 原代码生成的vtr文件在paraview显示结果：
 <div>
-    <img src="./figs/t7.png" width=300">
-    <img src="./figs/t7.png" width=300">
+    <p><img src="./figs/t7.png" width=300"> t=5000<p>
+    <img src="./figs/t7.png" width=300"> 
     <img src="./figs/t7.png" width=300">
 </div>
 
