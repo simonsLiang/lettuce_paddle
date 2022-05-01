@@ -29,9 +29,9 @@ lettuce是一个基于LBM的计算流体动力学框架,具有gpu加速计算、
 
 ### 图1 三维Taylor-Green旋涡Q准则等值面，雷诺数和网格分辨率分别为1600和256
 
-原代码生成的vtr文件在paraview显示结果：
+原代码生成的vtr文件在paraview显示结果（从左到右分别为t=5000,t=7000,t=10000)：
 <div>
-    <p><img src="./figs/t7.png" width=300"> t=5000<p>
+    <img src="./figs/t7.png" width=300">
     <img src="./figs/t7.png" width=300"> 
     <img src="./figs/t7.png" width=300">
 </div>
