@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 ## 4. 开始使用
 
-下面代码将在GPU上运行一个三维Taylor-Green vortex
+下面代码将在GPU上运行一个三维Taylor-Green旋涡
 
 ```
 import lettuce as lt
