@@ -20,7 +20,7 @@
 
 **参考repo:** [https://github.com/lettucecfd/lettuce](https://github.com/lettucecfd/lettuce)
                                         
-快速使用可参考[AIStudio](https://aistudio.baidu.com/aistudio/projectdetail/3838999?contributionType=1&shared=1)        
+快速使用可参考[AIStudio](https://aistudio.baidu.com/aistudio/projectdetail/3924419?contributionType=1&shared=1)        
 
 感谢百度飞桨提供的算力支持
 
@@ -43,7 +43,7 @@
     <img src="./figs/p10.png" width=280">
 </div>                                       
 
-可以从[BaiduYun](https://pan.baidu.com/s/1p8N9yoqkVypHZDUUsgFhAA?pwd=cexk)处下载本项目t=5000,t=7000,t=10000生成的vtr文件
+可以从[BaiduYun](https://pan.baidu.com/s/1FBABQj7NKH9NiBbl8HyGaQ?pwd=ev55)处下载本项目t=5000,t=7000,t=10000生成的vtr文件
 
 ### 图2 能量耗散率
 
@@ -57,7 +57,7 @@
     <img src="./figs/dp.png" width=400">
 </div>                                          
                                         
-可以从[BaiduYun](https://pan.baidu.com/s/1p8N9yoqkVypHZDUUsgFhAA?pwd=cexk)处下载本项目生成的6个TGV3DoutRes256E.npy文件             
+可以从[BaiduYun](https://pan.baidu.com/s/1FBABQj7NKH9NiBbl8HyGaQ?pwd=ev55)处下载本项目生成的6个TGV3DoutRes256E.npy文件             
 
 ## 3. 准备环境
 
