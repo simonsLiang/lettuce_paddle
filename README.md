@@ -97,7 +97,7 @@ flow = lt.TaylorGreenVortex3D(resolution, 1600, 0.05, lattice)
 collision = lt.BGKCollision(lattice, tau=flow.units.relaxation_parameter_lu)
 streaming = lt.StandardStreaming(lattice)
 simulation = lt.Simulation(flow, lattice, collision, streaming)
-print("MLUPS: ", simulation.step(1000))
+print("MLUPS: ", simulation.step(100))
 ```
 
 运行
