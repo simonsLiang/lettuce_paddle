@@ -107,10 +107,10 @@ class AntiBounceBackOutlet:
         # construct indices for einsum and get w in proper shape for the calculation in each dimension
         if len(direction) == 3:
             self.dims = 'dc, cxy -> dxy'
-            self.w = self.lattice.w[self.velocities].view(1, -1).t().unsqueeze(1)
+            self.w = self.lattice.w[self.velocities].reshape((1, -1)).unsqueeze(1)
         if len(direction) == 2:
             self.dims = 'dc, cx -> dx'
-            self.w = self.lattice.w[self.velocities].view(1, -1).t()
+            self.w = self.lattice.w[self.velocities].reshape((1, -1)).t()
         if len(direction) == 1:
             self.dims = 'dc, c -> dc'
             self.w = self.lattice.w[self.velocities]
