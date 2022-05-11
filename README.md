@@ -81,10 +81,6 @@
     <img src="./figs/t10.png" width=100">
 </div>                                       
 
-可以从[BaiduYun](https://pan.baidu.com/s/1FBABQj7NKH9NiBbl8HyGaQ?pwd=ev55)处下载本项目t=5000,t=7000,t=10000生成的vtr文件
-
-### 图4 能量耗散率
-
 使用原代码计算Ek得到的结果：
 <div>
     <img src="./figs/dt.png" width=400">
