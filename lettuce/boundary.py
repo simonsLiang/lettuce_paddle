@@ -122,11 +122,18 @@ class AntiBounceBackOutlet:
         u = u.cpu().numpy()
         u_w = u[[slice(None)] + self.index] + 0.5 * (u[[slice(None)] + self.index] - u[[slice(None)] + self.neighbor])
         u_w = paddle.to_tensor(u_w)
-        new_f[[np.array(self.lattice.stencil.opposite)[self.velocities]] + self.index] = (
-                - new_f[[self.velocities] + self.index] + self.w.cpu().numpy().transpose(2,0,1) * self.lattice.rho(f).cpu().numpy()[[slice(None)] + self.index] *
-                (2 + paddle.einsum(self.dims, self.lattice.e[self.velocities], u_w) ** 2 / self.lattice.cs ** 4
-                 - (pdnorm(u_w, dim=0) / self.lattice.cs) ** 2).cpu().numpy()
-        )
+        if len(self.w.shape)==3:
+          new_f[[np.array(self.lattice.stencil.opposite)[self.velocities]] + self.index] = (
+                  - new_f[[self.velocities] + self.index] + self.w.cpu().numpy().transpose(2,0,1) * self.lattice.rho(f).cpu().numpy()[[slice(None)] + self.index] *
+                  (2 + paddle.einsum(self.dims, self.lattice.e[self.velocities], u_w) ** 2 / self.lattice.cs ** 4
+                  - (pdnorm(u_w, dim=0) / self.lattice.cs) ** 2).cpu().numpy()
+          )
+        else:
+          new_f[[np.array(self.lattice.stencil.opposite)[self.velocities]] + self.index] = (
+                  - new_f[[self.velocities] + self.index] + self.w.cpu().numpy() * self.lattice.rho(f).cpu().numpy()[[slice(None)] + self.index] *
+                  (2 + paddle.einsum(self.dims, self.lattice.e[self.velocities], u_w) ** 2 / self.lattice.cs ** 4
+                  - (pdnorm(u_w, dim=0) / self.lattice.cs) ** 2).cpu().numpy()
+          )
         return paddle.to_tensor(new_f)
 
 
@@ -169,4 +176,3 @@ class EquilibriumOutletP(AntiBounceBackOutlet):
         no_collision_mask = pdzeros(size=f_shape[1:], dtype=paddle.bool, device=self.lattice.device)
         no_collision_mask[self.index] = 1
         return no_collision_mask
-
