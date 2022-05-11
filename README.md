@@ -70,7 +70,7 @@
     <img src="./figs/t101.png" width=250">
 </div>
 
-Q准则等值面如下：
+Q准则等值面（等值面阈值-1e-15)如下：
 <div>
     <img src="./figs/t51.png" width=250">
     <img src="./figs/t71.png" width=250"> 
