@@ -70,19 +70,14 @@
     <img src="./figs/t101.png" width=250">
 </div>
 
-采用相同参数（着色有一点区别，便于区分）本项目代码生成的vtr文件在paraview显示结果：
+Q准则等值面如下：
 <div>
     <img src="./figs/t51.png" width=250">
     <img src="./figs/t71.png" width=250"> 
     <img src="./figs/t101.png" width=250">
 </div>                                       
 
-使用原代码计算Ek得到的结果：
-<div>
-    <img src="./figs/dt1.png" width=400">
-</div>   
-
-使用本项目代码计算Ek得到的结果：
+生成的Ek的结果如下：
 <div>
     <img src="./figs/dp1.png" width=400">
 </div>                                          
