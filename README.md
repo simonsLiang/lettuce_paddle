@@ -61,9 +61,9 @@
 
 ### obstacle测试结果
 
-三维obstacle，雷诺数和网格分辨率分别为1600和256
+三维obstacle，雷诺数和网格分辨率分别为1600和256,char_length_lu=10.1
 
-原代码生成的vtr文件在paraview显示结果（从左到右分别为t=5000,t=7000,t=10000)：
+生成的vtr文件在paraview显示结果（从左到右分别为t=5000,t=7000,t=10000)：
 <div>
     <img src="./figs/t51.png" width=250">
     <img src="./figs/t71.png" width=250"> 
