@@ -65,22 +65,27 @@
 
 生成的vtr文件在paraview显示结果（从左到右分别为t=5000,t=7000,t=10000)：
 <div>
-    <img src="./figs/t51.png" width=250">
-    <img src="./figs/t71.png" width=250"> 
-    <img src="./figs/t101.png" width=250">
+    <img src="./figs/O5000s.png" width=250">
+    <img src="./figs/O7000s.png" width=250"> 
+    <img src="./figs/O10000s.png" width=250">
 </div>
 
 Q准则等值面如下：
 <div>
-    <img src="./figs/t51.png" width=250">
-    <img src="./figs/t71.png" width=250"> 
-    <img src="./figs/t101.png" width=250">
+    <img src="./figs/O5000.png" width=250">
+    <img src="./figs/O7000.png" width=250"> 
+    <img src="./figs/O10000.png" width=250">
 </div>                                       
 
 生成的Ek的结果如下：
 <div>
-    <img src="./figs/dp1.png" width=400">
-</div>                                          
+    <img src="./figs/OEk.png" width=400">
+</div>   
+
+计算−dk/dt如下：
+<div>
+    <img src="./figs/Odk.png" width=400">
+</div>                                           
                                         
 
 ## 3. 准备环境
