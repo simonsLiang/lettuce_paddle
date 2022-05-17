@@ -24,7 +24,6 @@ simulation.reporters.append(kinE_reporter)
 VTKreport = lt.VTKReporter(lattice, flow, interval=1000, filename_base="./output")
 simulation.reporters.append(VTKreport)
 # ---------- Simulate until time = 10 (PU) -------------
-print("Simulating", int(simulation.flow.units.convert_time_to_lu(10)), "steps! Maybe drink some water in the meantime.")
 print("MLUPS: ", simulation.step(10000))
 E = np.asarray(kinE_reporter.out)
 np.save("TGV3DoutRes" + str(resolution) + "E", E)
