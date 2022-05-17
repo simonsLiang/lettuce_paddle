@@ -148,6 +148,27 @@ python plotE.py --filename TGV3DoutRes256E.npy --savename ./dissipation.png
     <img src="./figs/output2.png" width=300">
 </div>      
 
+运行Obstacle3D
+```
+python Obstacle3D.py
+```
+
+测试其他所有模型
+```
+python test_all.py
+```
+输出：
+```
+Obstacle2D Performance in MLUPS: Tensor(shape=[1], dtype=float32, place=CUDAPlace(0), stop_gradient=True,
+       [4.36028433])
+CouetteFlow2D Performance in MLUPS: Tensor(shape=[1], dtype=float32, place=CUDAPlace(0), stop_gradient=True,
+       [8.17923832])
+DecayingTurbulence Performance in MLUPS: Tensor(shape=[1], dtype=float32, place=CUDAPlace(0), stop_gradient=True,
+       [12.97373295])
+PoiseuilleFlow2D Performance in MLUPS: Tensor(shape=[1], dtype=float32, place=CUDAPlace(0), stop_gradient=True,
+       [11.67977905])
+```
+
 ## 5. LICENSE
 
 [Apache License 2.0](./LICENSE)
